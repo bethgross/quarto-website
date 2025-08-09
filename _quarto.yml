@@ -2,20 +2,19 @@ project:
   type: website
 
 website:
-  title: "quarto_web"
+  title: "Beth — Notes & Analyses"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - text: Notes
+        menu:
+          - notes/2025-08-09_Test.qmd
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
-    css: styles.css
+      light: default
+      dark: slate
     toc: true
-
-
-
+    code-copy: true
